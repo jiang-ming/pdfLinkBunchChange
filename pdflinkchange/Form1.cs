@@ -108,7 +108,7 @@ namespace pdflinkchange
                         //AnnotationAction.Put(PdfName.LAUNCH, new PdfString("http://www.bing.com/"));
                         var filespec = AnnotationAction.GetAsDict(PdfName.F);
                         string url = filespec.GetAsString(PdfName.F).ToString();
-                        string newurl = url.Replace("Sanitary_SewerMap","Zoning_Map");
+                        string newurl = url.Replace("Sanitary_SewerMap","WendalStreetLight");
                         AnnotationAction.Put(PdfName.F, new PdfString(newurl));
                     }
                 }
